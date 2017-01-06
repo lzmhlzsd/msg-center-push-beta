@@ -8,8 +8,13 @@
     <script src="http://192.168.51.37:3000/socket.io/socket.io.js"></script>
     <script src="./jquery.min.js"></script>
     <script>
+        var push = function() {
+            
+        }
+    </script>
+    <script>
     var socket = io('http://192.168.51.37:3000', {
-        query: 'token=' + '123456'
+        query: 'token=' + '234567'
     });
     socket.on('connect', function() {
         console.log('authenticated');
