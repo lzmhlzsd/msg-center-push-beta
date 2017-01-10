@@ -26,11 +26,11 @@
     });
     socket.on('news', function(data) {
         $('#port').html(data.port);
-        $('#handshake').html(data.handshake);
+        $('#handshake').html(JSON.stringify(data.handshake));
         console.log(data);
-        socket.emit('my other event', {
-            my: 'data'
-        });
+        // socket.emit('my other event', {
+        //     my: 'data'
+        // });
     });
     </script>
 </head>

@@ -37,7 +37,7 @@ io.sockets.on('connection', function(socket) {
 
 });
 
-io.adapter(redis({ host: 'localhost', port: 6379 }));
+// io.adapter(redis({ host: 'localhost', port: 6379 }));
 
 server.listen(port, function() {
     console.log('listening on *:' + port);
